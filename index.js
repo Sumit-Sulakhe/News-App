@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function getdata(value) {
   console.log(value);
-  let data = fetch(`https://newsapi.org/v2/everything?q=${value}&from=2023-04-28&sortBy=publishedAt&apiKey=9d1af46c5e114527b63d53649fde84aa`)
+   let data = fetch(`https://newsapi.org/v2/everything?q=${value}&from=2023-04-28&sortBy=publishedAt&apiKey=9d1af46c5e114527b63d53649fde84aa`)
 
   data.then(response => response.json())
     .then((data1) => {
